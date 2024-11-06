@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            txtX = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            txtY = new TextBox();
-            label3 = new Label();
-            txtR1 = new TextBox();
-            textBox1 = new TextBox();
             label4 = new Label();
+            txtR2 = new TextBox();
+            txtR1 = new TextBox();
+            label3 = new Label();
+            txtY = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            txtX = new TextBox();
             btnCheck = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -44,7 +44,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtR2);
             groupBox1.Controls.Add(txtR1);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(txtY);
@@ -58,37 +58,28 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Ввод данных";
             // 
-            // txtX
+            // label4
             // 
-            txtX.Location = new Point(97, 28);
-            txtX.Name = "txtX";
-            txtX.Size = new Size(120, 23);
-            txtX.TabIndex = 0;
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 120);
+            label4.Name = "label4";
+            label4.Size = new Size(61, 15);
+            label4.TabIndex = 7;
+            label4.Text = "Радиус r2:";
             // 
-            // label1
+            // txtR2
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 31);
-            label1.Name = "label1";
-            label1.Size = new Size(85, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Координата X:";
+            txtR2.Location = new Point(96, 117);
+            txtR2.Name = "txtR2";
+            txtR2.Size = new Size(121, 23);
+            txtR2.TabIndex = 6;
             // 
-            // label2
+            // txtR1
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(85, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Координата Y:";
-            // 
-            // txtY
-            // 
-            txtY.Location = new Point(97, 57);
-            txtY.Name = "txtY";
-            txtY.Size = new Size(120, 23);
-            txtY.TabIndex = 3;
+            txtR1.Location = new Point(96, 88);
+            txtR1.Name = "txtR1";
+            txtR1.Size = new Size(121, 23);
+            txtR1.TabIndex = 5;
             // 
             // label3
             // 
@@ -99,28 +90,37 @@
             label3.TabIndex = 4;
             label3.Text = "Радиус r1:";
             // 
-            // txtR1
+            // txtY
             // 
-            txtR1.Location = new Point(96, 88);
-            txtR1.Name = "txtR1";
-            txtR1.Size = new Size(121, 23);
-            txtR1.TabIndex = 5;
+            txtY.Location = new Point(97, 57);
+            txtY.Name = "txtY";
+            txtY.Size = new Size(120, 23);
+            txtY.TabIndex = 3;
             // 
-            // textBox1
+            // label2
             // 
-            textBox1.Location = new Point(96, 117);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(121, 23);
-            textBox1.TabIndex = 6;
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 60);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Координата Y:";
             // 
-            // label4
+            // label1
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 120);
-            label4.Name = "label4";
-            label4.Size = new Size(61, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Радиус r2:";
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(85, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Координата X:";
+            // 
+            // txtX
+            // 
+            txtX.Location = new Point(97, 28);
+            txtX.Name = "txtX";
+            txtX.Size = new Size(120, 23);
+            txtX.TabIndex = 0;
             // 
             // btnCheck
             // 
@@ -131,6 +131,7 @@
             btnCheck.TabIndex = 1;
             btnCheck.Text = "Запуск программы";
             btnCheck.UseVisualStyleBackColor = true;
+            btnCheck.Click += btnCheck_Click;
             // 
             // Form1
             // 
@@ -156,7 +157,7 @@
         private Label label1;
         private TextBox txtX;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox txtR2;
         private Button btnCheck;
     }
 }
